@@ -5,17 +5,6 @@
         <meta charset="utf-8">
         <link rel="stylesheet" type="text/css" href="css/awesomestyle.css">
         <link href='http://fonts.googleapis.com/css?family=Lato' rel='stylesheet' type='text/css'>
-        <script src="http://code.jquery.com/jquery.js"></script>
-        <script>
-            
-        $(document).ready(function() {
-            $(".image3").click(function() {
-                $("#fbotext").show();
-        });
-    });           
-</script>
-        
-
 
         <title>Aviation Flash Cards Version 2</title>
        
@@ -32,8 +21,10 @@
         <li><a href= "quiz.html">Quiz</a></li>
             </ul>
         </nav>
-    
-       
+
+        <h5>Please click on the button to reveal the definition.</h5>
+
+        <button id="buttonFBO">Show Definition</button>
         <div class="image3">    
         <img src="images/img03.jpg" width=500 height=400 alt="Fixed Base Operator (FBO)"></div>
         <p id="fbotext" style="text-align: center;">Fixed Base Operator (FBO)</p>
@@ -50,5 +41,15 @@
     </br>
         
          
+    <script src="http://code.jquery.com/jquery.js"></script>
+    <script>
+            
+        $(document).ready(function() {
+            $("#buttonFBO").click(function() {
+                $("#fbotext").show();
+        });
+    });           
+    </script>
+
     </body>
 </html>
