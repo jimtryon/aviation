@@ -9,7 +9,19 @@
 </head>
 
 <body>
+
 <form name="contactForm" action="contact_submit.asp" method="get">
+<label>Title: &nbsp;</label><input type="text" name="title"><br>
+<label>Subject: &nbsp;</label>
+<select name="subject" required>
+	<option value="A">A</option>
+	<option value="B">B</option>
+	<option value="C">C</option>
+</select><br>
+<label>Student Name: &nbsp;</label><input type="text" name="studentName" required><br>
+<label>Email: &nbsp;</label><input type="email" name="email" required><br><br>
+<label>Message: &nbsp;</label><textarea name="message" rows="10" cols="40" wrap="soft" required></textarea><br>
+<input type="submit" name="submit">
 
 </form>
 	
