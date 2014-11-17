@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <meta charset="utf-8">
+        <link rel="stylesheet" type="text/css" href="css/awesomestyle.css">
+        <link href='http://fonts.googleapis.com/css?family=Lato' rel='stylesheet' type='text/css'>
+
+	
+	<!-- jQuery for Nav-->
+	<script>
+	    $('nav li ul').hide().removeClass('fallback');
+	    $('nav li').hover(
+	      function () {
+		$('ul', this).stop().slideDown(100);
+	      },
+	      function () {
+		$('ul', this).stop().slideUp(100);
+	      }
+	    );
+	</script>
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+	<!--END  jQuery for Nav-->
+        <title>Aviation Flash Cards Version 3</title>
+       
+    </head>
+
+    <body>
+         <h1>Aviation Flash Cards Version 3</h1>
+		
+		<nav>
+	    <ul>
+	      <li><a href="#">Section 1</a>
+	      	<ul class="fallback">
+		  <li><a href="revised1.html">Sub-Link 1</a></li>
+		  <li><a href="revised2.html">Sub-Link 2</a></li>
+		  <li><a href="revised3.html">Sub-Link 3</a></li>
+		</ul>
+	      </li>
+	      <li>
+		<a href="#">Section 2</a>
+		<ul class="fallback">
+		  <li><a href="#">Sub-Link 1</a></li>
+		  <li><a href="#">Sub-Link 2</a></li>
+		  <li><a href="#">Sub-Link 3</a></li>
+		</ul>
+	      </li>
+	      <li>
+		<a href="#">Section 3</a>
+		<ul class="fallback">
+		  <li><a href="#">Sub-Link 1</a></li>
+		  <li><a href="#">Sub-Link 2</a></li>
+		  <li><a href="#">Sub-Link 3</a></li>
+		</ul>
+	      </li>
+	      <li><a href="quiz.html">Quiz</a></li>
+	      <li><a href="contact.html">Contact</a></li>
+	    </ul>
+	  </nav>
+    
+       
+        
+        <h5>Please click on the button to reveal the definition.</h5>
+        
+        <button id="buttonFAR">Show Definition</button>
+        <div class="image2">    
+        <img src="images/img02.jpg"  alt="Federal Aviation Regulation (FAR)"></div>
+        <p id="fartext" style="text-align: center;">Federal Aviation Regulation (FAR)</p>
+		
+	<br>
+        <audio controls>
+	<source src="federal_aviation_regulation.mp3">
+	</audio>
+       
+        <br>
+		<div class="center">
+		&larr;<a href= "revised1.html">Back</a>&nbsp;&nbsp;&nbsp;<a href= "revised3.html">Next</a>&rarr;
+		</div>
+	<br>
+     
+    <script src="http://code.jquery.com/jquery.js"></script>
+    <script>        
+        $(document).ready(function() {
+            $("#buttonFAR").click(function() {
+                $("#fartext").show();
+        });
+    });           
+    </script>   
+         
+    </body>
+</html>
